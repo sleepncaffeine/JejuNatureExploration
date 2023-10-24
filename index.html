@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제주올레7코스</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div id=head-container>
+            <h1>제주올레7코스</h1>
+            <h5>박진재, 손승현, 박진성, 박정욱, 임채민</h5>
+        </div>
+    </header>
+    <div id="map-container">
+        <img src="images/map2.png" alt="Map Image">
+        <img class="viewpoint" id="viewpoint1" src="viewpoint.svg" style="left: 1415px; top: 252px;">
+        <img class="viewpoint" id="viewpoint2" src="viewpoint.svg" style="left: 35px; top: 392px;">
+        <img class="viewpoint" id="viewpoint3" src="viewpoint.svg" style="left: 1475px; top: 162px;">
+        <img class="viewpoint" id="viewpoint4" src="viewpoint.svg" style="left: 1351px; top: 232px;">
+        <img class="viewpoint" id="viewpoint5" src="viewpoint.svg" style="left: 1442px; top: 220px;">
+    </div>
+
+    <div id="overlay" class="hidden"></div>
+
+    <div id="info-window" class="hidden">
+        <h3 id="info-title"></h3>
+        <div class="info-container">
+            <div id="info-image-container">
+                <img id="info-image" src="" alt="Viewpoint Image">                
+                <div class="button-container">
+                    <button id="prev-image">〈</button>
+                    <button id="next-image">〉</button>
+                </div>
+            </div>
+            <div id="info-content"></div>
+        <button id="close-info">×</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
